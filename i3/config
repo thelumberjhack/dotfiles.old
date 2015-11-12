@@ -175,5 +175,8 @@ bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 15
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 15
 
 # Screen saver with i3lock
-bindsym $mod+x exec /home/yannick/.config/i3/i3lock-wrapper
+bindsym Ctrl+Mod1+l exec /home/yannick/.config/i3/i3lock-wrapper
+
+# Toggle external screen if any
+bindsym Ctrl+Mod1+t exec /home/yannick/.config/i3/screens 
 
