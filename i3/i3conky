@@ -33,9 +33,9 @@ TEXT
   {"name": "volume", "icon":"/home/yannick/.config/i3/xbmicons/spkr_01.xbm", \
    "color": "\#808080", "full_text": \
    "${exec amixer sget Master | grep Mono: | sed -e 's/[ \t]*Mono: Playback [0-9]* \[\([0-9]*%\)\].*/\1/'} "},  \
-  ${if_empty ${battery BAT1} } ${else}\
+  ${if_empty ${battery BAT0} } ${else}\
         {"name": "battery", "icon":"/home/yannick/.config/i3/xbmicons/bat_full_01.xbm", \
-         "color": "\#808080", "full_text": "${battery_percent BAT1}% "},  \
+         "color": "\#808080", "full_text": "${battery_percent BAT0}% "},  \
   ${endif} \
   {"name": "time", "icon":"/home/yannick/.config/i3/xbmicons/clock.xbm", \
    "icon_color": "\#CFCFCF", "color": "\#CFCFCF", \
